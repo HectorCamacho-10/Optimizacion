@@ -18,14 +18,14 @@ $nombre = "";
 $repettir = 0;
 
 if(isset($_POST['nombre']) && isset($_POST['repetir'])){
-    $nombre = $_POST['nombre']; //1
+    $nombre = $_POST['nombre']; //Ejercicio 1 No Optmiizado 
     $repettir = $_POST['repetir'];
 }
 
 if($repettir ==1){
     echo $nombre."\n";
 
-}
+}              
 if($repettir ==2){
     echo $nombre."\n";
     echo $nombre."\n";

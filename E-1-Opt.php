@@ -21,7 +21,7 @@ if(isset($_POST['nombre']) && isset($_POST['repetir'])){
     $nombre = $_POST['nombre'];
     $repettir = $_POST['repetir'];
 
-    for($i = 0; $i < $repettir; $i++){
+    for($i = 0; $i < $repettir; $i++){ //Ejercicio 1 optimizado Repetir Nombre
         echo $nombre."\n";
     }
 

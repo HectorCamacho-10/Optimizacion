@@ -1,11 +1,11 @@
 <?php
 class Persona {
 
-    //Atributos
+    
     public $nombre = "";
     
    
-   //Metodos
+   
     public function guardar($nombre) {
         $this-> nombre = $nombre;
     }
@@ -31,9 +31,9 @@ $persona  =  new persona();
     <form action="<?php echo $_SERVER["PHP_SELF"];?> " method = "post">
     <p>Introduce tu nombre</p><input name="nombre" type="text">
     <input type="submit">
-    </form>
+    </form> 
     <?php 
-    if(isset($_POST["nombre"])){
+    if(isset($_POST["nombre"])){ //Codigo Optimizado
         $persona->guardar($_POST["nombre"]);
         ?><p>Hola</p><br><?php
         echo  $persona->mostrar() ;?>

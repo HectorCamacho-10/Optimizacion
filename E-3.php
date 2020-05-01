@@ -1,6 +1,6 @@
 <?php
-    $numero_aletorio; //3
-    $numero = rand(5, 15); //4
+    $numero_aletorio; //Varible declrarada no inicializada
+    $numero = rand(5, 15); //Varible con la funcion de generar N  Aleatorio
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
     <title>Numero aletorio</title>
 </head>
 <body>
-    <p>Adivina el numero entre 5 y 15</p>
+    <p> 1 -15</p>
 
     <form action="<?php echo $_SERVER["PHP_SELF"];?> "method="post">
         <p>Numero :</p> <input type="number" name="numero">
@@ -22,8 +22,8 @@
     
     if (isset($_POST['numero'])){
         $numero_aletorio = $_POST['numero'];
-        if ($numero == $numero_aletorio){//5
-            echo $numero." acertaste FELICDADES";//6
+        if ($numero == $numero_aletorio){// == Comparacion 
+            echo $numero." acertaste FELICDADES";//Comillas Dobles
         }else{
             echo $numero." no acertaste";
         }

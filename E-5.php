@@ -1,12 +1,12 @@
 <?php
 class Persona {
 
-    //Atributos
-    public $nombre = "";
+    
+    public $nombre = "";//A
     
    
-   //Metodos
-    public function guardar($nombre) {
+   
+    public function guardar($nombre) {//M
         $this-> nombre = $nombre;
     }
 

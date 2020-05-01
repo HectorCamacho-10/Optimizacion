@@ -15,9 +15,9 @@
         $valor = 0;
         if (isset($_POST["valor"])){
             $valor = $_POST["valor"];
-            if($valor < 0){//7
+            if($valor < 0){
                 $valor *= -1;
-               print  'valor absoluto = '. $valor;//8
+               print  'valor absoluto = '. $valor;
             }
         }
      
